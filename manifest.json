@@ -1,0 +1,21 @@
+{
+  "name": "7 in 7 Day 7",
+  "description": "First tonejs extension",
+  "permissions": ["tabs", "background", "storage"],
+  "version": "1.0",
+  "manifest_version": 2,
+  "browser_action": {},
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+F",
+        "mac": "MacCtrl+Shift+F"
+      },
+      "description": "Opens hi.html"
+    }
+  },
+  "background": {
+    "scripts": ["./node_modules/tone/build/Tone.js", "index.js"],
+    "persistent": false
+  }
+}
